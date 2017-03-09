@@ -1,0 +1,18 @@
+name: check_dokuwiki
+description: "file:///README.md"
+url: "https://github.com/janvonde/check_dokuwiki"
+tags: dokuwiki
+vendor: Linux
+target: Website
+type: Plugin
+license: gplv3
+releases: 
+  - 
+    name: 1.0
+    description: "1.0 Release"
+    files: 
+      - 
+        name: check_dokuwiki.php
+        url: "file:///check_dokuwiki.php"
+        description: "initial public release"
+        checksum: 2d0799ef86d05d26f423024fe9d5a086
