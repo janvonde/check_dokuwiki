@@ -31,7 +31,12 @@ object CheckCommand "dokuwiki" {
 
 
 ### Changelog
+* 2017-03-10: check if doku.php exists in given path
 * 2017-03-09: initial public release
+
+
+### Contributors
+* [nbuchwitz](https://github.com/nbuchwitz)
 
 
 ### License

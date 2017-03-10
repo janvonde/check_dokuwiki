@@ -1,6 +1,6 @@
 #!/usr/bin/php
 <?php
- 
+
 /***
  *
  * Monitoring plugin to check the Dokuwiki update status.
@@ -14,8 +14,8 @@
  * For more information visit https://github.com/janvonde/check_dokuwiki
  *
  ***/
- 
- 
+
+
 
 // get commands passed as arguments
 $options = getopt("p:");
@@ -23,13 +23,13 @@ if (!is_array($options) ) {
 	print "There was a problem reading the passed option.\n\n";
 	exit(1);
 }
- 
+
 if (count($options) != "1") {
 	print "check_dokuwiki.php - Monitoring plugin to check the Dokuwiki update status\n
 You need to specify the following parameters:
   -p:   full path to dokuwiki root directory \n\n";
 	exit(2);
-} 
+}
 
 
 $dokuwikiBasePath = trim($options['p']);
@@ -48,7 +48,7 @@ $handle = fopen($file, "r");
 
 while (!feof($handle)) {
   $data = fgets($handle);
-  $pattern = '/(^\$updateVersion = )(.*)(;)/'; 
+  $pattern = '/(^\$updateVersion = )(.*)(;)/';
   preg_match($pattern, $data, $matches);
 
   if (!empty($matches)) {

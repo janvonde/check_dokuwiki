@@ -8,11 +8,11 @@ type: Plugin
 license: gplv3
 releases: 
   - 
-    name: 1.0
-    description: "1.0 Release"
+    name: 1.1
+    description: "1.1 Release"
     files: 
       - 
         name: check_dokuwiki.php
         url: "file:///check_dokuwiki.php"
-        description: "initial public release"
-        checksum: 2d0799ef86d05d26f423024fe9d5a086
+        description: "check if doku.php exists in given path"
+        checksum: a9526e21e9af1b59ab66a49384bce996
