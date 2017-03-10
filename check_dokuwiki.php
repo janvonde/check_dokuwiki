@@ -37,7 +37,14 @@ $dokuwikiBasePath = trim($options['p']);
 
 
 // we need the updateVersion number from doku.php
-$handle = fopen("$dokuwikiBasePath/doku.php", "r");
+$file = "$dokuwikiBasePath/doku.php";
+
+if (!file_exists($file)) {
+	print "UNKNOWN: could not find doku.php in ${dokuwikiBasePath}\n";
+	exit(3);
+}
+
+$handle = fopen($file, "r");
 
 while (!feof($handle)) {
   $data = fgets($handle);
